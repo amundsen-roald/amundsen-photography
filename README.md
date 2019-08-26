@@ -8,10 +8,13 @@
 
 [Amundsen-photography](https://github.com/amundsen-roald/amundsen-photography) 是我正在设计与开发的个人摄影作品展示平台，用来发布我在生活和旅行中拍摄的照片，同时也促使我不断提高自己的各项技能。
 
+### 关于设计
+在浏览了很多hexo等众多静态博客的主题后，很遗憾没有找到自己喜欢的，遂产生了自己写一套简洁美观的UI界面的项目，可以方便快速地查看照片。
+
 ### 前序准备
 你需要在本地安装 [node](https://nodejs.org/en/) 和 [git](https://git-scm.com/) , 本项目技术栈基于 [ES2015+](http://es6.ruanyifeng.com/) 及vue全家桶等技术栈 , 提前了解和学习这些知识以便于了解本项目。
 
-- 使用 [vue 2.x](https://cn.vuejs.org/index.html) 构建
+- 使用 [vue 2.x](https://cn.vuejs.org/index.html) + [TypeScript](https://www.typescriptlang.org/) 构建
 - 使用 [vue-router](https://router.vuejs.org/zh/) 管理路由
 - 使用 [vuex](https://vuex.vuejs.org/zh/) 管理状态
 - 使用 [eslint](https://eslint.org/) 进行代码检查
@@ -40,6 +43,12 @@ npm run lint
 npm run build
 
 ```
+
+### 测试
+- 该项目中未使用任何测试模块
+
+### 部署
+- 使用 [travis-ci](https://travis-ci.org/) 自动部署vue项目，并自动展示在gh-pages页面
 
 ### CHANGELOG
 [更新日志](./CHANGELOG.md)

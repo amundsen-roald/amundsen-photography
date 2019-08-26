@@ -1,0 +1,50 @@
+# Amundsen-photography
+
+#### 阿蒙森的摄影博客网站源码
+
+### 简介
+
+<!-- [Amundsen-photography](https://github.com/amundsen-roald/amundsen-photography)是由个人维护、极简、摄影类型的博客网站，本项目使用容易上手的vue前端框架搭建。 -->
+
+[Amundsen-photography](https://github.com/amundsen-roald/amundsen-photography) 是我正在设计与开发的个人摄影作品展示平台，用来发布我在生活和旅行中拍摄的照片，同时也促使我不断提高自己的各项技能。
+
+### 前序准备
+你需要在本地安装 [node](https://nodejs.org/en/) 和 [git](https://git-scm.com/) , 本项目技术栈基于 [ES2015+](http://es6.ruanyifeng.com/) 及vue全家桶等技术栈 , 提前了解和学习这些知识以便于了解本项目。
+
+- 使用 [vue 2.x](https://cn.vuejs.org/index.html) 构建
+- 使用 [vue-router](https://router.vuejs.org/zh/) 管理路由
+- 使用 [vuex](https://vuex.vuejs.org/zh/) 管理状态
+- 使用 [eslint](https://eslint.org/) 进行代码检查
+
+### 开发
+```
+# 克隆项目
+git clone git@github.com:amundsen-roald/amundsen-photography.git
+
+# 进入项目
+cd amundsen-photography
+
+# 安装依赖
+npm install
+
+# 建议不要直接使用 cnpm 安装依赖，会有各种诡异的 bug。可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
+
+# 启动服务
+npm run serve
+
+# 代码校验
+npm run lint
+
+# 构建项目
+npm run build
+
+```
+
+### CHANGELOG
+[更新日志](./CHANGELOG.md)
+
+### License
+[MIT](https://github.com/amundsen-roald/amundsen-photography/blob/master/LICENSE)
+
+Copyright (c) 2019 amundsen-roald

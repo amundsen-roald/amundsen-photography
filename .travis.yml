@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  -8
+
+before_install
+
+install
+
+before_script
+
+script
+
+before_cache
+
+after_success
+
+before_deploy
+
+deploy
+
+after_deploy
+
+after_script

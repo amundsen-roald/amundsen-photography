@@ -5,5 +5,5 @@
 </template>
 
 <style lang="less">
-
+  @import url('~@/styles/init');
 </style>

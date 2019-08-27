@@ -1,6 +1,6 @@
 <template>
 
-  <div :class="['main']">
+  <div class="main">
 
     <div :class="['container', picModel.visible ? 'no-scroll filter' : '']">
       <div class="beta">测试版</div>

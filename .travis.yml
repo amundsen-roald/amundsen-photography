@@ -2,22 +2,29 @@ language: node_js
 node_js:
   -8
 
-before_install
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
 
-install
+install:
+  - npm install
 
-before_script
+script:
+  - npm run build
 
-script
+after_script:
+  - cd ./dist
+  - git init
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m "deploy project"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
 
-before_cache
+branches:
+  only:
+    - master
 
-after_success
-
-before_deploy
-
-deploy
-
-after_deploy
-
-after_script
+env:
+ global:

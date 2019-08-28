@@ -39,9 +39,6 @@ npm run serve
 # 代码校验
 npm run lint
 
-# 构建项目
-npm run build
-
 ```
 
 ### 测试
@@ -49,6 +46,10 @@ npm run build
 
 ### 部署
 - 使用 [travis-ci](https://travis-ci.org/) 自动构建+部署vue项目，并展示在gh-pages页面
+
+### Travis CI 相关
+- 自动监听master分支变动，并部署至gh-pages分支
+- 开发分支为develop
 
 ### 其他 
 - 暂未使用第三方域名配置

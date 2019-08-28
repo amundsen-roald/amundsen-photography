@@ -1,14 +1,6 @@
 language: node_js
 node_js:
   - '8'
-cache: npm
-
-notifications:
-  email:
-    recipients:
-      - amundsen0314@gmail.com # 设置通知邮件
-    on_success: change
-    on_failure: always
 
 # Travis-CI Caching
 cache:
@@ -24,16 +16,12 @@ script:
 after_script:
   - cd ./dist
   - git init
-  - git config user.name "$U_NAME"
-  - git config user.email "$U_EMAIL"
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"
   - git add .
   - git commit -m "deploy git page project"
-  - git push --force --quiet "https://$GH_TOKEN@$GH_REF" master:$P_BRANCH
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
 
 branches:
   only:
     - master
-
-env:
-  global:
-    - REF=$GH_REF # 设置 github 地址

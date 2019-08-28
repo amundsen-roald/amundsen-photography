@@ -15,4 +15,4 @@ module.exports = {
       ['feat', 'fix', 'update', 'docs', 'style', 'refactor', 'test', 'chore', 'release', 'revert']
     ]
   }
-};
+}

@@ -7,12 +7,12 @@ import Photography from '@/views/photography/index.vue'
 Vue.use(Router)
 
 let router = new Router({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
-      redirect: '/blog',
+      redirect: '/photography',
     },
     {
       path: '/blog',

@@ -48,8 +48,8 @@ npm run lint
 - 使用 [travis-ci](https://travis-ci.org/) 自动构建+部署vue项目，并展示在gh-pages页面
 
 ### Travis CI 相关
-- 自动监听master分支变动，并部署至gh-pages分支
-- 开发分支为develop
+- CI自动监听master分支变动，并部署至gh-pages分支
+- 开发分支为develop，该分支不会触发CI运行
 
 ### 其他 
 - 暂未使用第三方域名配置

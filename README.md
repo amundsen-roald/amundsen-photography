@@ -50,8 +50,9 @@ npm run build
 ### 部署
 - 使用 [travis-ci](https://travis-ci.org/) 自动构建+部署vue项目，并展示在gh-pages页面
 
-### 其他
-- 暂未使用第三方域名配置，所以该单页应用在github page中使用的是哈希模式
+### 其他 
+- 暂未使用第三方域名配置
+- 该单页应用在github page中路由使用的是哈希模式
 
 ### CHANGELOG
 [更新日志](./CHANGELOG.md)

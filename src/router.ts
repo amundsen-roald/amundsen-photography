@@ -39,7 +39,7 @@ router.beforeEach(async (to, from, next) => {
 })
 
 router.afterEach(async (to, from) => {
-
+  console.log(to, from)
 })
 
 export default router

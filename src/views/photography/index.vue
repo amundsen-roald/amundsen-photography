@@ -213,6 +213,7 @@ export default {
       }
       &-content {
         width: 100%;
+        border-radius: 5px;
       }
       &-detail {
         margin-top: 20px;
